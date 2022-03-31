@@ -1,8 +1,8 @@
-﻿namespace MyFirstApplication;
+﻿
+namespace MyFirstApplication;
 
 /*
- This class goes over Value Types. Signed integrals include negative numbers.
-  signed integral numbers do not include negative numbers. 
+ This class goes over Value Types.
  */
 internal class Lesson1
 {
@@ -66,7 +66,6 @@ internal class Lesson1
     }
 
     // uint range 0 -4,294,967,295
-    // uint requires a suffix after the number 'U'
     uint myUInt = 4532U;
 
     public void UIntMinMax()
@@ -76,7 +75,6 @@ internal class Lesson1
     }
 
     // ulong range 0 - 18,446,744,073,709,551,615
-    // ulong requires a suffix of an 'L' after the number
     ulong myULong = 948372UL;
 
     public void ULongMinMax()
@@ -85,10 +83,9 @@ internal class Lesson1
         Console.WriteLine(UInt64.MaxValue);
     }
 
-    // Floating point numbers referred to as real numbers
-    // used to define a 32-bit floating point(decimal variable)
-    // float range is 3.4E +/-38
-    // it will require a suffix of 'F'
+    // Floating Point / Real Numbers
+
+    // float range 3.4E +/- 38
     float myFloat = -123.6589F;
 
     public void FloatMinMax()
@@ -98,23 +95,55 @@ internal class Lesson1
     }
 
     // double range 1.7E +/- 308
-    // double range has an optional suffix of 'D'
-    double MyDouble = 12.34D;
+    double myDouble = 12.34D;
 
-    public void DoubleMinMan()
+    public void DoubleMinMax()
     {
         Console.WriteLine(Double.MinValue);
         Console.WriteLine(Double.MaxValue);
     }
 
-    // decimal range is -7.9228E+24 to 7.9228E+24
-    // This one will require a suffix of 'M;
-    decimal MyDecimal = 13.23M;
+    // decimal range -7.9228E+24 to 7.9228E+24
+    decimal myDecimal = 13.23M;
 
     public void DecimalMinMax()
     {
         Console.WriteLine(Decimal.MinValue);
         Console.WriteLine(Decimal.MaxValue);
+    }
+
+    // Integral Literals
+    public void IntegralExample()
+    {
+        // value of 26
+        int value1 = 26; // decimal
+        int value2 = 0x1a; // hexadecimal
+        int value3 = 0b11010; // binary
+        Console.WriteLine(value1);
+        Console.WriteLine(value2);
+        Console.WriteLine(value3);
+    }
+
+    // Scientific Notation
+    double alpha = 6.26E-22;
+
+    // Underscores
+    long beta = 1_834_432L;
+
+    // Explicit casting is where fractions are truncated and not rounded
+    // You have to provide permission to cast from a highier type
+    // to a lower type.
+    public void ConvertFloatToInt()
+    {
+        int converted = (int)myFloat;
+        Console.WriteLine(converted);
+    }
+
+    // Implicit cast requires not direct permission
+    public void LongFromInt()
+    {
+        long someValue = myInt;
+        Console.WriteLine(someValue);
     }
 
 }
