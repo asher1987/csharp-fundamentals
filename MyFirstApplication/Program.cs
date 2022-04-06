@@ -16,7 +16,23 @@ they are specific to that member and can only be called inside that member.
 
 // Lesson Examples
 // HouseExample();
-Lesson1Example();
+//Lesson1Example();
+
+Lesson2Example();
+
+
+
+// Lesson 2 Strings
+void Lesson2Example()
+{
+    Lesson2 myLesson2 = new Lesson2();
+    myLesson2.MyTrimExample();
+    int able = myLesson2.MyStringLength();
+    Console.WriteLine(able);
+    myLesson2.MyEqualsExample("Hello World");
+    myLesson2.MyExampleChar();
+    Console.WriteLine(myLesson2.MyEscapeExample());
+}
 
 void HouseExample()
 {
@@ -48,3 +64,14 @@ void MyLocalFunction()
     Console.WriteLine("I am learning stuff every day.");
 }
 MyLocalFunction();
+
+void Exercise2()
+{
+    Exercise2 myExercise2 = new Exercise2();
+    myExercise2.Question1();
+    myExercise2.Question2();
+    myExercise2.Question3();
+
+    Console.WriteLine(myExercise2.Question4());
+}
+Exercise2();
