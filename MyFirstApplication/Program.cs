@@ -99,12 +99,31 @@ void Lesson3Example()
 
 void Question4()
 {
-    Exercise3 myExercise3 = new Exercise3();
-    myExercise3.Question4(false, true);
-    myExercise3.Question4(false, false);
-    myExercise3.Question4(true, true);
-    myExercise3.Question4(true, false);
+    //  Exercise3 myExercise3 = new Exercise3();
+    //  myExercise3.Question4(false, true);
+    //  myExercise3.Question4(false, false);
+    //  myExercise3.Question4(true, true);
+    //   myExercise3.Question4(true, false);
 
+    Lesson4Example();
+
+    // Lesson 4 Control Flow
+    void Lesson4Example()
+    {
+        Lesson4 myLesson4 = new Lesson4();
+        //  myLesson4.BasicIfStatement(11);
+        //  myLesson4.BasicIfElseStatement(12);
+        //  myLesson4.BasicIfElseChainStatement(10);
+        //  myLesson4.BasicAndOrCondition(20, 20);
+        //Console.WriteLine(myLesson4.BasicTernaryExample(35));
+        // myLesson4.BasicSwitchStatement(2);
+        // myLesson4.BasicWhileStatement();
+        //myLesson4.BasicForStatement();
+        myLesson4.BasicJumpStatement();
+    }
+
+
+    
 
 
 }
