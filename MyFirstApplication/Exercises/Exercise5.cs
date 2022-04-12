@@ -20,29 +20,25 @@ public class Exercise5
     }
 
     //Write a method that will take 1 char parameterand a string
-    //return type. Using a switchexpressionand the table below, return the
+    //return type. Using a switch expressionand the table below, return the
     //description. If the value does not match the grade, return the default
     //message, “Not a valid grade”
     public string Question2(char arg1)
     {
-        switch (arg1)
+        string result = arg1 switch
         {
-            case 'E':
-                return "Excellent";
+            'E' => "Excellent",
+            'V' => "Very Good",
+            'G' => "Good",
+            'A' => "Average",
+            'F' => "Fail",
+            _ => "Not a valid grade."
 
-            case 'V':
-                return "Very Good";
-            case 'G':
-                return "Good";
-            case 'A':
-                return "Average";
-            case 'F':
-                return "Fail";
-            default:
-                return "Not a valid grade.";
-
-        }
+        };
+        return result;
     }
+    
+
 
     //Write a method that takes 1 argumentand a void return type. Using
     //a Relational Pattern and switch expression determine a size of popcorn
@@ -68,9 +64,6 @@ public class Exercise5
     }
 
 
-
-
-        }
 
 
 
