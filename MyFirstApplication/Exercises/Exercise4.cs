@@ -30,29 +30,24 @@ public class Exercise4
     //does not match the grade, return the default message, “Not a valid grade”
 
 
-    public void Question2(char arg1)
+    public string Question2(char arg1)
     {
         switch (arg1)
         {
             case 'E':
-                Console.WriteLine("Excellent");
-                break;
+                return"Excellent";
 
             case 'V':
-                Console.Write("Very Good");
-                break;
+                return "Very Good";
             case 'G':
-                Console.WriteLine("Good");
-                break;
+                return"Good";
             case 'A':
-                Console.WriteLine("Average");
-                break;
+                return "Average";
             case 'F':
-                Console.WriteLine("Fail");
-                break;
+                return"Fail";
             default:
-                Console.WriteLine("Not a valid grade.");
-                break;
+                return"Not a valid grade.";
+                
         }
 
 
