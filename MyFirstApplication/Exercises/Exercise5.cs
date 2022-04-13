@@ -37,7 +37,7 @@ public class Exercise5
         };
         return result;
     }
-    
+
 
 
     //Write a method that takes 1 argumentand a void return type. Using
@@ -62,7 +62,7 @@ public class Exercise5
         };
         Console.WriteLine(popcornsize);
     }
-
+}
 
 
 
