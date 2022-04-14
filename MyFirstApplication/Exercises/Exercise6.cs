@@ -11,12 +11,12 @@ public class Exercise6
 
 
 
-    private int _showSize;
+    private int _shoeSize;
     private string _shoeType;
 
     public void Question1(int size, string type)
     {
-        _showSize = size;
+        _shoeSize = size;
         _shoeType = type;
     }
 
@@ -34,8 +34,8 @@ public class Exercise6
 
     public int showSize
     {
-        get { return _showSize; }
-        set { _showSize = value; }
+        get { return _shoeSize; }
+        set { _shoeSize = value; }
     }
 
 
@@ -48,14 +48,20 @@ public class Exercise6
 
     public delegate void TryOn(string type);
 
-    public void TryOnHat(string message)
+    public void TryOnClothes(string message)
     {
-        Console.WriteLine($"TryOnHat = {message}");
+        Console.WriteLine($"TryOnClothes = {message}");
     }
 
 }
 
 
 
+/* void Exercise6()
+{
+    Exercise6 myclothes = new Exercise6(2, "shirt");
+Exercise6.TryOn theClothes = myclothes.TryOnClothes;
+theClothes($"I tried on a {myclothes.showSize}");
+}
 
-
+*/
