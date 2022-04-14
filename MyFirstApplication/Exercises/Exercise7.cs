@@ -43,7 +43,7 @@ code under it as seen in the lecture. Test your record to ensure it is working
 correctly
  */
 
-internal record Boat (string speed)
+internal record BoatObject (string speed)
 {
     public void GoesFast()
     {

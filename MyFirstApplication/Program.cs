@@ -164,10 +164,14 @@ void Lesson5Example()
 
 }
 
-//Exercise 6 Test
-void Exercise6Example()
+void Exercise6()
 {
-    Exercise6 myExerisie  = new Exercise6(8, "Converse");
-    Exercise6.TryOn theShoe = myShoes.TryOnShoe;
-    theShoe($"I tried on a {myShoes.ShowSize} size shoe that was made by {myShoes.ShoeType}");
+    Exercise6 myclothes = new Exercise6(2, "shirt");
+    Exercise6.TryOn theClothes = myclothes.TryOnClothes;
+    theClothes($"I tried on a {myclothes.showSize}");
+}
+
+void Exercise8Example()
+{
+    Exercise8.Area(6, 4);
 }
