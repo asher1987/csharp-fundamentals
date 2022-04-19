@@ -21,7 +21,10 @@
 
 */
 
+
+
 internal class Pony : Horse
+
 {
     //auto property 
     public int Ponyage { get; init; }
@@ -31,25 +34,39 @@ internal class Pony : Horse
         : base(color, weight, size)
     {
         Ponyage = age;
-        
+
     }
 
     //constructor 2
     public Pony(string color, int weight, int age)
-    
-     :this(color, weight, "small", age)
+
+     : this(color, weight, "small", age)
     {
 
-    }     
-
-        
-    // third constructor-default
-    public Pony()
-        : this("Brown", 700, 5) { }
     }
 
 
-internal class Fishing_Boat : Boat
+    // third constructor-default
+    public Pony()
+        : this("Brown", 700, 5) { }
+
+
+
+    /* Exercise 12:
+     * In your child class of Horse, using the override keyword to create a method 
+     * that has the same name as the virtual method from Horse. 
+     * Add a Console WriteLine that provides a different message from the Horse
+     */
+
+    public override void HorseMethod()
+    {
+        base.HorseMethod();
+        Console.WriteLine("My pony can run just as fast as a horse.");
+    }
+}
+
+
+   internal class Fishing_Boat : Boat
 {
             
     public int TopSpeed
@@ -74,8 +91,16 @@ internal class Fishing_Boat : Boat
     // third constructor
     public Fishing_Boat()
         :this("Red", 5000, 150) { }
-    
 
+    /*Exercise 12: In your child class of Boat, using the overridekeyword create a method 
+     * that has the same name as the virtual method from Boat. 
+     * Add a Console WriteLine that provides a different message from the Boat.
+    */
+    public override void BoatMethod()
+    {
+        base.BoatMethod();
+        Console.WriteLine("My fishing boat floats.");
     }
+}
 
 

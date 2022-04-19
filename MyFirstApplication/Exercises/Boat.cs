@@ -20,7 +20,7 @@ internal class Boat
 
     //attributes as Expression Body Definition Properties
     public string Boatcolor;
-    public string Boatkind;
+    public int Boatweight;
     public string Boatsize;
     
         
@@ -30,10 +30,10 @@ internal class Boat
         set => Boatcolor = value;
     }
 
-    public string BoatKind
+    public int BoatWeight
     {
-        get => Boatkind;
-        set => Boatkind = value;
+        get => Boatweight;
+        set => Boatweight = value;
     }
 
     public string BoatSize
@@ -43,25 +43,41 @@ internal class Boat
     }
 
     //first constructor 
-    public Boat(string color, string kind, string size)
+    public Boat(string color, int weight, string size)
     {
         //parameters are equal to properties
         Boatcolor = color;
-        Boatkind = kind;
+        Boatweight = weight;
         Boatsize = size;
     }
 
     // second constructor
-    public Boat(string Boatcolor, string Boatkind)
-       : this(Boatcolor, Boatkind, "Large") { }
+    public Boat(string Boatcolor, int Boatweight)
+       : this(Boatcolor, Boatweight, "Large") { }
 
     //third constructor
     public Boat()
-        : this("Red", "Fishing Boat") { }
+        : this("Red", 700) { }
 
     //adding method for boat
-    public void BoatMethod()
+    public virtual void BoatMethod()
     {
         Console.WriteLine($"My boat floats.");
     }
+
+
+    public void BoatMethod(int price)
+    {
+        Console.WriteLine($"My boat will cost {price} at the boat shop.");
+    }
+   /* In your Boatclass, add the virtual keyword to your method created in 
+    * Lesson 10. Create a second version of the same method and add a parameter
+    * .Include a Console WriteLine method in the new method that uses the 
+    * parameter.This parameter needs to be based on one of your properties
+   */
+
+     
 }
+
+
+

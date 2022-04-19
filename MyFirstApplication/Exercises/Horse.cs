@@ -40,8 +40,22 @@ internal class Horse
         : this("Brown", 700) { }
 
     //adding method for horse
-    public void HorseMethod()
+    public virtual void HorseMethod() //added virtual keyword for exericse 12
     {
-        Console.WriteLine($"My horse runs fast.");
+
     }
+
+    public virtual void HorseMethod(int Topspeed)
+    {
+        //Console.WriteLine with parameter
+        Console.WriteLine($"My horse can run {Topspeed} mph in a race.");
+    }
+    /*
+     *In your Horseclass, add the virtual keyword to your method created in 
+     *Lesson 10. Create a second version of the same method and add a parameter.
+     *Include a Console WriteLine method in the new method that uses the 
+     *parameter. This parameter needs to be based on one of your properties.
+    */
 }
+
+
