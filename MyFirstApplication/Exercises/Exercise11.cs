@@ -51,13 +51,17 @@ internal class Pony : Horse
 
 internal class Fishing_Boat : Boat
 {
-    //auto property
-    public int Topspeed { get; init; }
+            
+    public int TopSpeed
+    {
+        get => TopSpeed;
+        set => TopSpeed = value;
+    }
 
     //constructor 1
     public Fishing_Boat(string color, int weight, string size, int speed)
     {
-        Topspeed = speed;
+        TopSpeed = speed;
     }
 
     //constructor 2
@@ -70,8 +74,8 @@ internal class Fishing_Boat : Boat
     // third constructor
     public Fishing_Boat()
         :this("Red", 5000, 150) { }
-    {
+    
 
     }
-}
+
 
