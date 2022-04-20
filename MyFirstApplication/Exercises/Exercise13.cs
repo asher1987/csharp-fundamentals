@@ -22,22 +22,23 @@ internal abstract class WaterBirds : IMovement //abstract class
 internal class WhiteBirds : WaterBirds //derived class
 {
 
-                                      
+
     public override int Speed { get; init; } = 10; //implementation of property
 
-    public override void Fly () //implementation of method
+    public override void Fly() //implementation of method
     {
 
         Console.WriteLine($"The swan can fly at {Speed} mph.");
     }
-    
 
-    public override void Splash () //implementation of method
+
+    public override void Splash() //implementation of method
     {
         Console.WriteLine("The bird makes a big splash.");
     }
-    public WhiteBirds (int arg)
-        : base(arg) { }
+    public WhiteBirds(int arg) //constructor with int value 
+        : base(arg) { } //:base to pass int value to base of abstract class
+
 }
 
 
