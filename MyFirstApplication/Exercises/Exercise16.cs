@@ -16,7 +16,7 @@ public class Exercise16
     {
         List<Horse> horseObject = new List<Horse>(); //list of horse objects
         horseObject.Add(new Horse()); //first constructor 
-        horseObject.Add(new Horse( "Large")); //second constructor 
+        horseObject.Add(new Horse( "Large", 705)); //second constructor 
         horseObject.Add(new Horse("Brown", 700)); //third constructor
 
         foreach (Horse item in horseObject) // foreach loop
