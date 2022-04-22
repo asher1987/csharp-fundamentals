@@ -166,7 +166,7 @@ void Lesson5Example()
 
 void Exercise6()
 {
-    Exercise6 myclothes = new Exercise6(2, "shirt");
+    Exercise6 myclothes = new Exercise6();
     Exercise6.TryOn theClothes = myclothes.TryOnClothes;
     theClothes($"I tried on a {myclothes.showSize}");
 }
